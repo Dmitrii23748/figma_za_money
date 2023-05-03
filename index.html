@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
@@ -24,7 +28,9 @@
           <nav class="header__nav">
             <ul class="header__nav-list">
               <li class="header__nav-item">
-                <a class="header__nav-link header__nav-link--registr" href="#">Регистрация</a>
+                <a class="header__nav-link header__nav-link--registr" href="#"
+                  >Регистрация</a
+                >
               </li>
               <li class="header__nav-item">
                 <a class="header__nav-link" href="#">Вход</a>
@@ -45,11 +51,19 @@
           </div>
           <ul class="header-content__link">
             <li class="header-content__item">
-              <a class="header-content__item-link header-content__item-link--orange" href="#">Начать сейчас</a>
+              <a
+                class="header-content__item-link header-content__item-link--orange"
+                href="#"
+                >Начать сейчас</a
+              >
               <p class="header-content__item-text">Время - деньги</p>
             </li>
             <li class="header-content__item">
-              <a class="header-content__item-link header-content__item-link--border" href="#">Подробнее</a>
+              <a
+                class="header-content__item-link header-content__item-link--border"
+                href="#"
+                >Подробнее</a
+              >
               <p class="header-content__item-text">Формула успеха</p>
             </li>
           </ul>
@@ -61,9 +75,102 @@
             />
           </div>
         </div>
-
-       
+      </div>
+      <div class="header__btn-block">
+        <a class="header__btn" href="#">
+          <img
+            class="header__btn-img"
+            src="images/header/header-btn.svg"
+            alt="button"
+          />
+        </a>
       </div>
     </header>
+
+    <section class="step-one">
+      <div class="container">
+        <h1 class="step-one__title">
+          <span class="step-one__title-span">Talent Q</span
+          ><span class="span-color">:</span> 6 шагов к успеху
+        </h1>
+        <h2 class="step-one__subtitle">Изучите видеоуроки</h2>
+        <div class="step-one__video">
+          <a
+            class="step-one__video-big"
+            style="background-image: url(../images/section-01/video-big-1.jpg)"
+            href="#"
+          >
+            <div class="video-big__play">
+              <div class="video-big__play-border">
+                <img
+                  class="video-big__play-img"
+                  src="images/section-01/play.svg"
+                  alt="play"
+                />
+              </div>
+
+              <p class="step-one__video-text">Смотреть видеоуроки</p>
+            </div>
+          </a>
+
+          <div class="step-one__video-list">
+            <div class="step-one__item">
+              <a
+                class="step-one__video-item-small"
+                href="#"
+                style="
+                  background-image: url(../images/section-01/video-small-1.jpg);
+                "
+              >
+                <img src="images/section-01/small-play.svg" alt="play" />
+              </a>
+              <p class="step-one__video-small-text">
+                Как успевать в отведенное время?
+              </p>
+            </div>
+            <div class="step-one__item">
+              <a
+                class="step-one__video-item-small"
+                href="#"
+                style="
+                  background-image: url(../images/section-01/video-small-1.jpg);
+                "
+                ><img src="images/section-01/small-play.svg" alt="play"
+              /></a>
+              <p class="step-one__video-small-text">
+                Что читать сначала: текст или вопрос?
+              </p>
+            </div>
+            <div class="step-one__item">
+              <a
+                class="step-one__video-item-small"
+                href="#"
+                style="
+                  background-image: url(../images/section-01/video-small-1.jpg);
+                "
+                ><img src="images/section-01/small-play.svg" alt="play"
+              /></a>
+              <p class="step-one__video-small-text">
+                Как быстро находить верные ответы?
+              </p>
+            </div>
+
+            <div class="step-one__one__gramofon-item">
+              <img
+                class="step-one__gramofon"
+                src="images/section-01/gramofon.svg"
+                alt="gramofon"
+              />
+              <p class="step-one__gramofon-text">
+                Об этом и не только расскажет
+                <span class="video-small__span"
+                  >практикующий эксперт Антон Добрышин.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
