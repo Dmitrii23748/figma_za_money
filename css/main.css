@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -410,7 +411,14 @@ body {
 }
 
 .step-two {
-  padding-bottom: 100px;
+  position: relative;
+  padding-bottom: 232px;
+}
+
+.step-two__cub {
+  position: absolute;
+  top: -312px;
+  right: 0;
 }
 
 .step-two__inner {
@@ -540,4 +548,203 @@ body {
 
 .step-two__btn-block:hover .tests-btn__img path {
   stroke: #fff;
+}
+
+.block-position {
+  position: relative;
+  padding-bottom: 198px;
+}
+
+.three-block__dop {
+  position: absolute;
+  bottom: -130px;
+  left: 0;
+  width: 100%;
+}
+
+.step-three {
+  position: relative;
+}
+
+.step-three__cub-3 {
+  position: absolute;
+  top: -274px;
+  left: -14px;
+}
+
+.step-three__cub-border {
+  position: absolute;
+  top: 93px;
+  left: -70px;
+  right: 0;
+  margin: auto;
+}
+
+.step-three__cub-border-small {
+  position: absolute;
+  top: 316px;
+  right: -6px;
+}
+
+.step-three__subtitle {
+  margin-bottom: 46px;
+}
+.step-three__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.step-three__item {
+  position: relative;
+  max-width: 585px;
+  height: 224px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 20px rgba(67, 45, 36, 0.25);
+  border-radius: 20px;
+  padding: 0 0 0 30px;
+  transition: all 0.3s ease-in;
+}
+
+.step-three__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 28px;
+  background: url(../images/section-03/comp-orange.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  width: 71px;
+  height: 12px;
+}
+
+.step-three__item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 0px 40px rgba(11, 3, 0, 0.25);
+}
+
+.step-three__item-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #555555;
+}
+
+.step-three__item-span {
+  font-weight: 700;
+}
+
+.three-block {
+  position: relative;
+  z-index: 4;
+}
+
+.three {
+  position: relative;
+  padding: 44px 68px 38px 20px;
+  height: 232px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: url(../images/section-03/bg-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(245, 94, 34, 0.25);
+}
+
+.step-three__title-number {
+  font-weight: 700;
+  font-size: 286.111px;
+  top: -58px;
+  right: -10px;
+  z-index: 2;
+}
+
+.three__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.three__text-one {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 21px;
+}
+
+.three__text-two {
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+  max-width: 346px;
+}
+
+.three__btn {
+  position: relative;
+}
+
+.three__btn:hover .three__btn-reaction {
+  color: #fff;
+  background-color: #fc6652;
+  border: 2px solid #fff;
+}
+
+.three__btn-grom {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  z-index: 3;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.three__btn:hover .three__btn-grom path {
+  fill: #fff;
+}
+
+.three__btn-reaction {
+  position: relative;
+  z-index: 2;
+  padding: 20px 70px 20px 20px;
+  background: #ffffff;
+  box-shadow: 0px 8.65961px 17.3192px rgba(66, 44, 34, 0.19);
+  border-radius: 65.1971px;
+  font-weight: 700;
+  font-size: 22.5843px;
+  line-height: 30px;
+  color: #fc6652;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in;
+}
+
+.three-orange {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.three-man {
+  position: absolute;
+  top: -102px;
+  left: 0;
+  right: 96px;
+  margin: auto;
+}
+
+.section-wrapper {
+  padding-bottom: 400px;
+  background: url(../images/bg-section.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
