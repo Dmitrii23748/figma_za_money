@@ -751,6 +751,7 @@ body {
 }
 .step-four {
   position: relative;
+  margin-bottom: 255px;
 }
 .step-four__wrapper {
   position: relative;
@@ -834,4 +835,134 @@ body {
 
 .step-four__content-img {
   grid-area: 1 / 2 / 3 / 3;
+}
+
+.four__content-img {
+  animation: myAnimImg 9s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnimImg {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.step-five {
+  position: relative;
+}
+
+.step-five__line-block {
+  position: absolute;
+  top: 76px;
+  left: 0;
+  height: 352px;
+}
+
+.step-five__wrapper {
+  position: relative;
+}
+.step-five__title-number {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 381.633px;
+  opacity: 0.1;
+}
+
+.step-five__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.step-five__img-block {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.step-five__img {
+  height: 463px;
+  width: 528px;
+  max-width: 100%;
+}
+.step-five__content {
+  grid-area: 1 / 2 / 2 / 3;
+  max-width: 585px;
+  position: relative;
+}
+.step-five__content::after {
+  content: '';
+  position: absolute;
+  top: -62px;
+  left: -4px;
+  background: url(../images/section-05/setka.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  width: 80px;
+  height: 72px;
+}
+.step-five__content-btn {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.step-five__subtitle {
+  font-weight: 800;
+  font-size: 38.6111px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fc6652;
+  margin-bottom: 48px;
+}
+
+.step-five__subtitle-dop {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.step-five__content-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #c4c4c4;
+  margin-bottom: 16px;
+}
+
+.step-five__content-text:last-child {
+  margin-bottom: 32px;
+}
+
+.five-btn {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  background: #fc6652;
+  border-radius: 100px;
+  padding: 34px 118px 30px 52px;
+  z-index: 2;
+  transition: all 0.3s ease-in;
+}
+
+.five-btn:hover {
+  transform: translateY(-6px);
+}
+
+.step-five__content-btn-img {
+  position: absolute;
+  top: 28px;
+  right: 34px;
 }
