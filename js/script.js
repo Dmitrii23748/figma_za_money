@@ -11,7 +11,9 @@ const showBlock = (elem) => {
 
 document.addEventListener("scroll", () => {
   if (window.innerWidth >= 1280) {
-    showBlock(stepOne);
-    showBlock(stepThree);
+    setTimeout(() => {
+      showBlock(stepOne);
+      showBlock(stepThree);
+    }, 1000);
   }
 });
