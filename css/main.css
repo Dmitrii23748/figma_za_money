@@ -531,6 +531,7 @@ body {
 }
 
 .step-two__tests-btn {
+  position: relative;
   display: inline-block;
   width: 380px;
   height: 84px;
@@ -1548,6 +1549,33 @@ body {
   .step-one__title::after {
     display: none;
   }
+  .step-two__content::after {
+    display: none;
+  }
+
+  .step-two__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-two__tests {
+    order: 1;
+    margin-bottom: 44px;
+  }
+
+  .step-two__content {
+    order: 2;
+    margin-bottom: 64px;
+  }
+
+  .step-two__btn-block {
+    order: 3;
+  }
+
+  .step-three__list {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1559,6 +1587,19 @@ body {
     background-size: contain;
     max-width: 688px;
     max-height: 500px;
+  }
+
+  .three {
+    background: #000000;
+  }
+
+  .three-orange {
+    display: none;
+  }
+
+  .three-man {
+    width: 250px;
+    top: -6px;
   }
 }
 
@@ -1596,6 +1637,65 @@ body {
   }
 }
 
+@media (max-width: 930px) {
+  .three-block__dop {
+    bottom: -180px;
+  }
+  .three {
+    height: auto;
+  }
+  .three__inner {
+    flex-direction: column;
+  }
+
+  .three__text {
+    margin-bottom: 30px;
+  }
+
+  .three-man {
+    left: auto;
+  }
+  .step-two {
+    padding-bottom: 72px;
+  }
+}
+
+@media (max-width: 880px) {
+  .three-man {
+    top: -68px;
+    right: -10px;
+    width: 184px;
+  }
+
+  .three__text-one {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .three__text-two {
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 150px;
+  }
+  .three__inner {
+    align-items: flex-start;
+  }
+  .step-three__title-number {
+    font-size: 196px;
+    top: 110px;
+  }
+}
+
+@media (max-width: 770px) {
+  .step-two__content-img {
+    max-width: 700px;
+    width: 100%;
+  }
+  .step-two__content-logo {
+    padding-right: 0;
+  }
+}
+
 @media (max-width: 705px) {
   .step-one__video-big {
     background-size: contain;
@@ -1614,6 +1714,13 @@ body {
 
   .step-one__title-number {
     top: 588px;
+  }
+  .step-two__cub {
+    display: none;
+  }
+
+  .step-two__content-inner {
+    gap: 140px;
   }
 }
 
@@ -1636,6 +1743,42 @@ body {
   }
   .step-one__img-kvadrat {
     display: none;
+  }
+
+  .step-three__cub-3,
+  .step-three__cub-border,
+  .step-three__cub-border-small {
+    display: none;
+  }
+  .step-three__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .step-three__item-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 162px;
+  }
+
+  .step-three__item-img {
+    max-width: 136px;
+    height: 120px;
+  }
+
+  .step-three__item::after {
+    width: 40px;
+  }
+  .step-three__item {
+    height: 132px;
+  }
+
+  .three__btn-reaction {
+    font-size: 18px;
+    line-height: 24px;
+    width: 296px;
   }
 }
 
@@ -1680,15 +1823,47 @@ body {
   .header__picture-img {
     max-width: 225px;
   }
+
   .step-one__title-number {
     font-size: 196px;
+  }
+
+  .step-two__content-inner {
+    gap: 132px;
+  }
+
+  .step-two__tests-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .step-two__content-img {
+    height: 200px;
+  }
+
+  .step-two__content-text {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    max-width: 106px;
+  }
+
+  .step-two__content-logo {
+    max-width: 92px;
+  }
+
+  .step-two__title-number {
+    font-weight: 700;
+    font-size: 196px;
+    top: -16px;
   }
 }
 
 @media (max-width: 508px) {
   .step-one {
     padding-top: 80px;
-    padding-bottom: 110px;
+    padding-bottom: 60px;
   }
   .step-one__video-big {
     max-width: 375px;
@@ -1726,6 +1901,34 @@ body {
 
   .step-one__title-number {
     top: 336px;
+  }
+}
+
+@media (max-width: 442px) {
+  .three-block__dop {
+    bottom: -238px;
+  }
+}
+
+@media (max-width: 408px) {
+  .step-two__content-inner {
+    gap: 100px;
+  }
+
+  .step-two__tests-btn {
+    width: 246px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 14px 0 30px 22px;
+  }
+
+  .tests-btn__img {
+    width: 36px;
+    height: 24px;
+    top: 14px;
+    right: 28px;
   }
 }
 
