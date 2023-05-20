@@ -769,7 +769,7 @@ body {
 }
 .step-four {
   position: relative;
-  margin-bottom: 255px;
+  margin-bottom: 155px;
 }
 .step-four__wrapper {
   position: relative;
@@ -1616,6 +1616,32 @@ body {
   }
 }
 
+@media (max-width: 1100px) {
+  .step-five__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step-five__img-block {
+    order: 2;
+    margin-bottom: 30px;
+  }
+
+  .step-five__content {
+    order: 1;
+  }
+
+  .step-five__content-btn {
+    order: 3;
+  }
+  .step-five__line-block {
+    top: 544px;
+  }
+  .step-five__content::after {
+    left: 5px;
+  }
+}
+
 @media (max-width: 1060px) {
   .header-content {
     display: flex;
@@ -1753,6 +1779,9 @@ body {
 
   .step-two__content-inner {
     gap: 140px;
+  }
+  .step-five__line-block {
+    max-width: 520px;
   }
 }
 
@@ -1928,6 +1957,54 @@ body {
     font-size: 196px;
     top: -16px;
   }
+
+  .step-five__subtitle {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .step-five__subtitle-dop {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .step-five__content-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .step-five__title-number {
+    font-weight: 700;
+    font-size: 196px;
+  }
+  .step-five__line-block {
+    top: 290px;
+    height: 260px;
+  }
+  .step-five__img {
+    max-width: 410px;
+    max-height: 344px;
+  }
+
+  .five-btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 21px 118px 21px 52px;
+  }
+  .step-five__content-btn {
+    text-align: center;
+  }
+
+  .step-five__content-btn-img {
+    width: 34px;
+    height: 34px;
+    top: 16px;
+  }
+  .step-five__line-block {
+    max-width: 386px;
+  }
 }
 
 @media (max-width: 508px) {
@@ -1977,6 +2054,19 @@ body {
 @media (max-width: 442px) {
   .three-block__dop {
     bottom: -238px;
+  }
+
+  .step-five__line-block {
+    max-width: 324px;
+  }
+
+  .step-five__img {
+    max-width: 280px;
+    max-height: 244px;
+  }
+  .five-btn {
+    width: 342px;
+    padding: 21px 70px 21px 26px;
   }
 }
 
