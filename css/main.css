@@ -1536,6 +1536,12 @@ body {
 .footer__social-item:hover {
   transform: translateY(-7px);
 }
+@media (max-width: 1280px) {
+  .step__item-1,
+  .step__item-3 {
+    transform: translateX(0);
+  }
+}
 
 @media (max-width: 1270px) {
   .header__picture {
